@@ -9,6 +9,7 @@ public class Aula10Ex2 {
 		
 		int[] idades = new int[10];
 		int[] maiores = new int[10];
+		int index = 0;
 		
 		Scanner in = new Scanner(System.in);
 		
@@ -17,18 +18,19 @@ public class Aula10Ex2 {
 			idades[i] = in.nextInt();
 			
 			if(idades[i] >= 18) {
-				maiores[i] = idades[i];
+				maiores[index] = idades[i];
+				index++;
 			}
 		}
 		
 		for(int i = 0; i < idades.length; i++) {
 			System.out.println("Idade " + (i + 1) + "--> " + idades[i]);
-			System.out.println(maiores[i]);
 			System.out.println("");
-		}
+		}		
 		
-		//System.out.println("O número de pessoas maiores de idade é " + maiores.length);
+		System.out.println(Arrays.toString(idades));
 		System.out.println(Arrays.toString(maiores));
+		System.out.printf("A quantidade de pessoas maiores de idade é %d", index);
 		
 		in.close();
 	}
