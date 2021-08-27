@@ -22,23 +22,23 @@ public class MarioAula05 {
 	}
 	
 	public void perderEstamina() {
-		if(getEstamina() < 10) {
-			setEstamina(0);
+		if(this.getEstamina() < 10) {
+			this.setEstamina(0);
 		} else {
-			setEstamina(getEstamina() - 10);
+			this.setEstamina(this.getEstamina() - 10);
 		}
 	}
 	
 	public void ganharEstamina() {
-		if(getEstamina() > 95) {
-			setEstamina(100);
+		if(this.getEstamina() > 95) {
+			this.setEstamina(100);
 		} else {
-			setEstamina(getEstamina() + 5);
+			this.setEstamina(this.getEstamina() + 5);
 		}
 	}
 	
 	public void crescer() {
-		setAltura(getAltura() * 2);
+		this.setAltura(this.getAltura() * 2);
 	}
 
 	public String getNome() {
